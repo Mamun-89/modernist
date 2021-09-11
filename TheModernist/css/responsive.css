@@ -1,0 +1,228 @@
+/* tablet */
+
+@media only screen and (min-width:200px) and (max-width:1044px) {
+    header {
+        height: 100%;
+        border: 1px solid transparent;
+    }
+
+    header .navbar {
+        padding: 15px 5px;
+    }
+
+    header .navbar .logo h1 {
+        font-size: 1rem;
+    }
+
+    header .navbar .menu ul li a {
+        padding: 5px 5px;
+        font-size: 15px;
+    }
+
+    .slider {
+        margin: 10px 0;
+    }
+
+    .slider .slider-items {
+        margin: 20px 70px;
+    }
+
+    .slider .slider-items .item .img {
+        width: auto;
+    }
+
+    .slider .slider-items .item .img .image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .slider .slider-items .item .content .text h1 {
+        font-size: 1.5rem;
+    }
+
+    .slider .slider-items .item .content {
+        padding-left: 10px;
+    }
+
+    .slider .prevSlide {
+        left: 5px;
+    }
+
+    .slider .nextSlide {
+        right: 5px;
+    }
+
+
+    #services .container {
+        margin: 0;
+    }
+
+    #services .container .card-wrapper {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #services .container .works h1 {
+        margin: 0 235px;
+    }
+
+    #services .container .works .cardwrapper {
+        justify-content: center;
+    }
+
+    footer .container {
+        margin: 0 10px;
+    }
+}
+
+/* mobile */
+@media only screen and (min-width:200px) and (max-width:768px) {
+    nav>.container {
+        padding: 0 30px;
+    }
+
+    nav>.container>.main-menu {
+        position: fixed;
+        right: -280px;
+        visibility: hidden;
+        width: 200px;
+        height: 100%;
+        top: 0;
+        overflow-y: auto;
+        background: #222222;
+        z-index: 1000;
+        padding: 30px 0;
+        transition: all .5s ease;
+    }
+
+    nav>.container>.main-menu.open {
+        visibility: visible;
+        right: 0;
+    }
+
+    nav .container .main-menu>.menuList>.menuItem {
+        display: block;
+        margin: 0;
+    }
+
+    nav .container .main-menu>.menuList>.menuItem>a {
+        padding: 12px 30px;
+        border-bottom: 1px solid #290000;
+    }
+
+    nav .container .main-menu>.menuList>.menuItem>.sub-menu {
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        border: none;
+        transform: translateY(0px);
+        padding: 0px;
+        left: auto;
+        right: auto;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    nav .container .main-menu>.menuList>.menuItem:hover .sub-menu {
+        max-height: 100%;
+    }
+
+    nav .container .main-menu>.menuList>.menuItem>.sub-menu>.menuItem {
+        padding: 5px 30px;
+    }
+
+    nav>.container>.main-menu>.closNav {
+        display: flex;
+    }
+
+    nav>.container>.mobileMenu {
+        display: flex;
+    }
+
+    .slider .slider-items {
+        margin: 20px 35px;
+    }
+
+    .slider .slider-items .item .content {
+        padding-left: 0;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+
+    #services .container .card-wrapper .card {
+        width: 200px;
+        height: 250px;
+    }
+
+    #services .container .card-wrapper .card h1 {
+        font-size: 1.1rem;
+    }
+
+    #services .container .works h2 {
+        margin: 0 115px;
+    }
+
+    #services .container .works .cardwrapper .worksCard {
+        width: 220px;
+        height: 225px;
+    }
+
+    #services .container .works .cardwrapper .worksCard .img {
+        width: 220px;
+    }
+
+    footer .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+
+}
+
+/* extra small device */
+@media only screen and (min-width:200px) and (max-width:480px) {
+    nav>.container {
+        padding: 0 15px;
+    }
+
+    .slider .slider-items .item {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .slider .slider-items .item .content {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .slider .slider-items .item .content .text h1 {
+        font-size: 1.3rem;
+    }
+
+    #services .container .works h2 {
+        margin: 0 0px;
+        font-size: 20px;
+    }
+
+    #services .container .works .lineBar {
+        display: none;
+    }
+
+    #services .container .works .cardwrapper .worksCard {
+        width: 200px;
+    }
+
+    #services .container .works .cardwrapper .worksCard .img {
+        width: 200px;
+    }
+
+    footer .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
